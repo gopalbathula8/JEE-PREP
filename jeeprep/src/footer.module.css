@@ -1,0 +1,179 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.footer {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    height: 4cm; /* This might need adjustment for responsiveness */
+    background-color: rgba(106, 106, 87, 0.4);
+    background-size: cover;
+    padding: 1cm;
+}
+
+.title {
+    padding-top:10%;
+    color: black;
+}
+.info {
+    font-size: 20px;
+    display: flex;
+    justify-content: center;
+    padding-bottom: 10%;
+}
+
+.info a {
+    color: black;
+    margin: 0 1cm;
+}
+
+.info a:hover,
+.info i:hover {
+    color: antiquewhite;
+}
+.second{
+    display: flex;
+    flex-direction: column;
+    align-content:start;
+}
+.copy{
+    text-align: right;
+    color:black
+}
+.about {
+    display: flex;
+    justify-content:space-evenly;
+    font-size: 13px;
+    color: rgb(214, 204, 189);
+    font-weight: bold;
+    text-align:justify;
+}
+
+.k {
+    margin: 0 1cm;
+    text-decoration: none;
+    color: black;
+}
+
+.k:hover {
+    text-decoration: none;
+    transform: scale(1);
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .footer {
+        flex-direction: column;
+        /* Stack elements vertically */
+        align-items: flex-start;
+        /* Align content to the start */
+        height: auto;
+        /* Adjust height to fit content */
+        padding: 0.5cm;
+        /* Reduce padding for smaller screens */
+    }
+
+    .title {
+        font-size: 1.2rem;
+        /* Adjust title font size */
+        padding-top: 5%;
+    }
+
+    .info {
+        font-size: 18px;
+        /* Reduce font size on smaller screens */
+        margin-bottom: 0.5cm;
+        /* Adjust margin for smaller screens */
+        flex-direction: column;
+        /* Stack links vertically */
+        align-items: center;
+    }
+
+    .info a {
+        margin: 0 0.5cm;
+        /* Reduce margin between links */
+    }
+
+    .second {
+        width: 100%;
+        /* Ensure full width */
+        align-items: center;
+        text-align: center;
+    }
+
+    .copy {
+        font-size: 16px;
+        /* Adjust font size for smaller screens */
+        text-align: center;
+        margin-top: 1cm;
+    }
+
+    .about {
+        font-size: 16px;
+        /* Adjust font size */
+        flex-direction: column;
+        /* Stack elements vertically */
+        align-items: center;
+        text-align: center;
+    }
+
+    .k {
+        margin: 0 0.5cm;
+        /* Reduce margin between items */
+    }
+}
+
+@media (max-width: 480px) {
+    .footer {
+        padding: 0.25cm;
+        /* Further reduce padding */
+        flex-direction: column;
+        /* Ensure elements are stacked vertically */
+    }
+
+    .title {
+        font-size: 1rem;
+        /* Further reduce font size */
+    }
+
+    .info {
+        font-size: 16px;
+        /* Further reduce font size */
+        margin-bottom: 0.25cm;
+        /* Adjust margin */
+    }
+
+    .info a {
+        margin: 0.25cm 0;
+        /* Stack links with smaller margin */
+    }
+
+    .second {
+        width: 100%;
+        /* Ensure full width */
+        text-align: center;
+        /* Center align text */
+    }
+
+    .copy {
+        font-size: 14px;
+        /* Further reduce font size */
+        text-align: center;
+        margin-top: 0.5cm;
+    }
+
+    .about {
+        font-size: 14px;
+        /* Further reduce font size */
+        text-align: center;
+    }
+
+    .k {
+        margin: 0 0.25cm;
+        /* Further reduce margin */
+    }
+}

@@ -1,0 +1,242 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* Ensure padding and borders are included in element's total width and height */
+}
+
+body {
+    overflow-x: hidden;
+    /* Prevent horizontal scrolling */
+}
+
+.top {
+    height: 15vh;
+    /* Adjusted height */
+    width: 100vw;
+    /* Full width */
+    display: flex;
+    align-items: center;
+    /* Center items vertically */
+    background-color: rgb(73, 73, 214);
+    padding: 0 1rem;
+    /* Added padding */
+}
+
+.logo {
+    color: white;
+    font-size: 2rem;
+    margin-right: auto;
+    display: flex;
+    align-items: center;
+}
+
+.home {
+    height: 100%;
+    color: whitesmoke;
+    display: flex;
+    align-items: center;
+    padding: 0 1rem;
+    text-decoration: none;
+}
+
+.home a:hover {
+    color: whitesmoke;
+}
+
+.body {
+    min-height: 100vh;
+    width: 90%;
+    background-image: url("../background_pic/exam.jpg");
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+
+}
+
+.main {
+    width: 100%;
+    /* Flexible width */
+    max-width: 1200px;
+    /* Maximum width for larger screens */
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+    /* Padding to avoid content touching edges */
+    box-sizing: border-box;
+    /* Include padding and borders in total width/height */
+}
+
+.jeem,
+.jeea {
+    width: 100%;
+    /* Full width */
+    display: flex;
+    flex-direction: column;
+}
+
+.jeem h2,
+.jeea h2 {
+    text-decoration: underline;
+    margin-left: 1rem;
+    /* Adjusted margin */
+    margin-top: 1rem;
+    /* Adjusted margin */
+    font-size: 1.5rem;
+    /* Adjusted font size */
+}
+
+.jeem img,
+.jeea img {
+    width: 100%;
+    /* Full width */
+    height: 40%;
+    /* Maintain aspect ratio */
+    margin-top: 1rem;
+    /* Adjusted margin */
+}
+
+.jeem ul,
+.jeea ul {
+    margin-top: 1rem;
+    margin-left: 1rem;
+    /* Adjusted margin */
+    font-size: 1.25rem;
+    /* Adjusted font size */
+    padding-right: 1rem;
+    /* Adjusted padding */
+}
+
+.no {
+    list-style-type: none;
+}
+
+.jeea p {
+    margin-top: 1rem;
+    /* Adjusted margin */
+    font-size: 1.25rem;
+    /* Adjusted font size */
+    padding-left: 1rem;
+    /* Adjusted padding */
+    font-weight: bold;
+}
+/* Responsive Adjustments */
+@media (max-width: 1200px) {
+    .top {
+        padding: 0 0.5rem;
+        /* Reduce padding on smaller screens */
+    }
+
+    .logo {
+        font-size: 1.5rem;
+        /* Reduce font size */
+    }
+
+    .home {
+        padding: 0 0.5rem;
+        /* Reduce padding */
+    }
+
+    .main {
+        width: 95%;
+        /* Adjust width */
+    }
+
+    .jeem h2,
+    .jeea h2 {
+        font-size: 1.25rem;
+        /* Reduce font size */
+    }
+
+    .jeem ul,
+    .jeea ul {
+        font-size: 1rem;
+        /* Reduce font size */
+    }
+
+    .jeea p {
+        font-size: 1rem;
+        /* Reduce font size */
+    }
+}
+
+@media (max-width: 768px) {
+    .top {
+        flex-direction: column;
+        /* Stack items vertically */
+        align-items: flex-start;
+        /* Align items to the start */
+        padding: 0.5rem;
+        /* Adjust padding */
+    }
+
+    .logo {
+        font-size: 1.25rem;
+        /* Further reduce font size */
+    }
+
+    .home {
+        margin-top: 0.5rem;
+        /* Add margin for separation */
+    }
+
+    .main {
+        width: 100%;
+        /* Full width on smaller screens */
+        padding: 0.5rem;
+        /* Reduce padding */
+    }
+
+    .jeem h2,
+    .jeea h2 {
+        font-size: 1rem;
+        /* Further reduce font size */
+    }
+
+    .jeem ul,
+    .jeea ul {
+        font-size: 0.875rem;
+        /* Further reduce font size */
+    }
+
+    .jeea p {
+        font-size: 0.875rem;
+        /* Further reduce font size */
+    }
+}
+
+@media (max-width: 480px) {
+    .logo {
+        font-size: 1rem;
+        /* Smallest font size */
+    }
+
+    .home {
+        font-size: 0.875rem;
+        /* Adjust font size */
+    }
+
+    .main {
+        padding: 0.25rem;
+        /* Minimal padding */
+    }
+
+    .jeem h2,
+    .jeea h2 {
+        font-size: 0.875rem;
+        /* Smallest font size */
+    }
+
+    .jeem ul,
+    .jeea ul {
+        font-size: 0.75rem;
+        /* Smallest font size */
+    }
+
+    .jeea p {
+        font-size: 0.75rem;
+        /* Smallest font size */
+    }
+}

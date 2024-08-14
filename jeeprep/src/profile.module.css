@@ -1,0 +1,167 @@
+/* Ensure the container fills the viewport */
+.container {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    width: 100vw;
+}
+
+/* Wrapper to control the purple background height and extend it full width */
+.headerWrapper {
+    background-color: #6c49d6;
+    padding-bottom: 50px;
+    width: 100%;
+}
+
+/* Header styles */
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    color: white;
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Title styling */
+.title h1 {
+    margin: 0;
+    font-size: 30px;
+}
+
+/* Home link styling */
+.home a {
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+}
+
+/* Main section with split background */
+.main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    background: linear-gradient(to bottom, #6c49d6 50%, #f5f7fb 50%);
+    width: 100vw;
+}
+
+/* Card styling */
+.card {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    background-color: white;
+    padding: 20px;
+    align-items: center;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 75vw;
+    height: 60vh;
+}
+
+/* Profile photo styling */
+.profilePhoto {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    background-color: rgb(140, 136, 136);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 20px;
+}
+
+/* FontAwesome icon styling */
+.userIcon {
+    font-size: 80px;
+    color: white;
+}
+
+/* Profile details */
+.profileDetails p {
+    margin: 10px 0;
+}
+
+/* Pending status color */
+
+/* Responsive design */
+@media (max-width: 1024px) {
+    .header {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .home a {
+        margin-top: 10px;
+    }
+
+    .card {
+        flex-direction: column;
+        width: 90vw;
+        height: auto;
+    }
+
+    .profilePhoto {
+        width: 120px;
+        height: 120px;
+    }
+
+    .userIcon {
+        font-size: 60px;
+    }
+}
+
+@media (max-width: 768px) {
+    .title h1 {
+        font-size: 24px;
+    }
+
+    .home a {
+        font-size: 18px;
+    }
+
+    .profilePhoto {
+        width: 100px;
+        height: 100px;
+    }
+
+    .userIcon {
+        font-size: 50px;
+    }
+
+    .card {
+        width: 100%;
+        padding: 15px;
+    }
+}
+
+@media (max-width: 480px) {
+    .header {
+        padding: 10px;
+    }
+
+    .title h1 {
+        font-size: 20px;
+    }
+
+    .home a {
+        font-size: 16px;
+    }
+
+    .profilePhoto {
+        width: 80px;
+        height: 80px;
+    }
+
+    .userIcon {
+        font-size: 40px;
+    }
+
+    .card {
+        width: 100%;
+        padding: 10px;
+    }
+}

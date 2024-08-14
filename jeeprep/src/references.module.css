@@ -1,0 +1,134 @@
+/* Container for the entire page */
+.container {
+    font-family: Arial, sans-serif;
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+/* Top section styling */
+.top {
+    height: 15vh;
+    background-color: rgb(134, 182, 37);
+    color: white;
+    padding: 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.home a {
+    color: white;
+    text-decoration: none;
+    font-size: 1rem;
+    padding: 0.5rem 1rem;
+    border-radius: 4px;
+    background-color: rgba(255, 255, 255, 0.2);
+    transition: background-color 0.3s;
+}
+
+.home a:hover {
+    background-color: rgba(255, 255, 255, 0.4);
+}
+
+/* Body section styling */
+.body {
+    background: url('./assets/References.jpg') no-repeat center center fixed;
+    background-size: cover;
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.main {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    max-width: 1200px;
+    width: 100%;
+}
+
+/* Styling for each section */
+.physics,
+.maths,
+.chamistry {
+    background: rgba(255, 255, 255, 0.9);
+    border-radius: 8px;
+    padding: 1rem;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    width: calc(33.333% - 2rem);
+    box-sizing: border-box;
+    max-width: 100%;
+}
+
+.physics img,
+.maths img,
+.chamistry img {
+    width: 100%;
+    height: auto;
+    border-radius: 4px;
+    display: block;
+}
+
+a {
+    color: rgb(134, 182, 37);
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+h2,
+h3 {
+    color: rgb(134, 182, 37);
+}
+
+/* Media queries for responsiveness */
+
+/* Adjust layout for tablets */
+@media (max-width: 768px) {
+
+    .physics,
+    .maths,
+    .chamistry {
+        width: calc(50% - 2rem);
+    }
+}
+
+/* Adjust layout for mobile devices */
+@media (max-width: 480px) {
+    .top {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .logo {
+        margin-bottom: 1rem;
+    }
+
+    .home a {
+        font-size: 0.875rem;
+        padding: 0.5rem;
+    }
+
+    .body {
+        padding: 1rem;
+    }
+
+    .physics,
+    .maths,
+    .chamistry {
+        width: 100%;
+    }
+
+    ul {
+        padding-left: 1rem;
+    }
+}
